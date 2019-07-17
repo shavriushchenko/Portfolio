@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'bloknotcregular';
+    src: url('../fonts/Bloknotc/bloknotc-webfont.eot');
+    src: url('../fonts/Bloknotc/bloknotc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bloknotc/bloknotc-webfont.woff2') format('woff2'),
+         url('../fonts/Bloknotc/bloknotc-webfont.woff') format('woff'),
+         url('../fonts/Bloknotc/bloknotc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bloknotheavycregular';
+    src: url('../fonts/Bloknotheavyc/bloknotheavyc-webfont.eot');
+    src: url('../fonts/Bloknotheavyc/bloknotheavyc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Bloknotheavyc/bloknotheavyc-webfont.woff2') format('woff2'),
+         url('../fonts/Bloknotheavyc/bloknotheavyc-webfont.woff') format('woff'),
+         url('../fonts/Bloknotheavyc/bloknotheavyc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Condensed Web';
+    src: url('../fonts/MyriadCondensedWeb/Myriad-CnWeb.eot');
+    src: url('../fonts/MyriadCondensedWeb/Myriad-CnWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadCondensedWeb/Myriad-CnWeb.woff2') format('woff2'),
+        url('../fonts/MyriadCondensedWeb/Myriad-CnWeb.woff') format('woff'),
+        url('../fonts/MyriadCondensedWeb/Myriad-CnWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../fonts/treb/TrebuchetMS.eot');
+    src: url('../fonts/treb/TrebuchetMS.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/treb/TrebuchetMS.woff2') format('woff2'),
+        url('../fonts/treb/TrebuchetMS.woff') format('woff'),
+        url('../fonts/treb/TrebuchetMS.ttf') format('truetype'),
+        url('../fonts/treb/TrebuchetMS.svg#TrebuchetMS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

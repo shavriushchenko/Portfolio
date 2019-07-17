@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Myriad Condensed Web';
+    src: url('Myriad-CnWeb.eot');
+    src: url('Myriad-CnWeb.eot?#iefix') format('embedded-opentype'),
+        url('Myriad-CnWeb.woff2') format('woff2'),
+        url('Myriad-CnWeb.woff') format('woff'),
+        url('Myriad-CnWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

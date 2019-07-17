@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="main.css">	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+    </script>
+    <script>       
+    $(document).ready(function(){
+        var largeSrc;
+        var largeAlt;       
+        $('.flagbox a').click(function(){
+            var largeSrc=$(this).attr("href");
+            var largeAlt=$(this).attr("title");
+            $('#largeflag').attr({ src: largeSrc, alt: largeAlt });
+            $('.countryname').html(largeAlt);
+            return false;
+        });
+    });
+     $(document).ready(function(){        
+        var stepLeft=$('#left');
+        var stepRight=$('#right');
+        var flagBox=$('.flagbox');
+        var pixelStep=224;
+        var startPosition=0;
+        var items= flagBox.find('a').length;
+        console.log(items);
+        var minstep = - ((items - 4) * pixelStep);
+        var maxstep = 0;
+
+        stepLeft.click(function(){
+           if(startPosition!= maxstep){
+            startPosition+=224;
+            flagBox.animate({left:startPosition+'px'});   
+            }       
+         });
+
+        stepRight.click(function(){
+           if(startPosition!= minstep){
+            startPosition-=224;
+            flagBox.animate({left:startPosition+'px'});   
+            }         
+         });    
+    });
+
+   </script>
+</head>
+<body>
+    <h1>Country</h1>
+    <p class="countryname">Georgia</p>
+	<div class="window">
+        <img id="largeflag" src="1.jpg" alt="Georgia">
+    </div> 
+    <div class="slider">  
+       <div class="flagbox">
+       <a href="1.jpg" title="Georgia"><img src="1.jpg" alt="Georgia"></a>
+       <a href="2.jpg" title="Greece"><img src="2.jpg" alt="Greece"></a>
+       <a href="3.jpg" title="India"><img src="3.jpg" alt="India"></a>
+       <a href="4.jpg" title="Iceland"><img src="4.jpg" alt="Iceland"></a>
+       <a href="5.jpg" title="Norway"><img src="5.jpg" alt="Norway"></a>
+       <a href="6.jpg" title="Portugal"><img src="6.jpg" alt="Portugal"></a>
+       <a href="7.jpg" title="USA"><img src="7.jpg" alt="USA"></a>
+       <a href="8.jpg" title="Ukraine"><img src="8.jpg" alt="Ukraine"></a>  
+       </div>
+    </div> 
+    <button id="left">Left</button>
+    <button id="right">Right</button>
+</body>	
+</html>
